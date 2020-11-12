@@ -1,9 +1,9 @@
-sudo: required
-services:
-  - python 3.8
+language: python
+python:
+  - "3.8"
 
-before_install:
-  - pip install
+install:
+  - pipenv install
 
 script:
   - python -m unittest discover -v
