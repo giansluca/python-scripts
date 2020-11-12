@@ -5,8 +5,11 @@ verify_ssl = true
 
 [dev-packages]
 pylint = "*"
+autopep8 = "*"
 
 [packages]
+requests = "*"
+pyttsx3 = "*"
 
 [requires]
 python_version = "3.8"
