@@ -3,7 +3,7 @@ python:
   - "3.8"
 
 install:
-  - pipenv install
+  - pipenv install "pyttsx3 ; platform_system == 'Linux'"
 
 script:
   - python -m unittest discover -v
