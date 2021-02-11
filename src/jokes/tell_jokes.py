@@ -30,7 +30,7 @@ def make_request_2() -> list:
     return jokes_list
 
 
-def create_jokes_list(json_data) -> list:
+def create_jokes_list(json_data: str) -> list:
     jokes_list = []
     for item in json_data:
         newJoke = Joke(item["setup"], item["punchline"])
